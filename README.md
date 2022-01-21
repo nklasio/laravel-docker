@@ -30,7 +30,17 @@ docker compose up -d --build
 
 ```bash
 docker compose run --rm <normal command goes here>
-#example: docker compose run --rm artisan migrate
-#example: docker compose run --rm npm install
-#example: docker compose run --rm composer require <package>
+# example: docker compose run --rm artisan migrate
+# example: docker compose run --rm npm install
+# example: docker compose run --rm composer require <package>
+```
+
+6. optional, add this to your bash profile or your zshrc
+
+```bash
+alias dcr="docker compose run --rm"
+# reduces commands by a lot
+# example: docker compose run --rm artisan migrate
+# turns into
+# dcr artisan migrate
 ```
